@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<uexplugins>
+    <plugin name="uexChart">
+        
+        <method name="openPieChart"></method>
+        <method name="closePieChart"></method>
+        <method name="openLineChart"></method>
+        <method name="closeLineChart"></method>
+        <method name="openBarChart"></method>
+        <method name="closeBarChart"></method>
+        
+    </plugin>
+</uexplugins>
