@@ -10,16 +10,17 @@
 //
 
 import Foundation
-import CoreGraphics;
+import CoreGraphics
 import UIKit
-public class BubbleChartDataSet: BarLineScatterCandleChartDataSet
+
+public class BubbleChartDataSet: BarLineScatterCandleBubbleChartDataSet
 {
-    internal var _xMax = Float(0.0)
-    internal var _xMin = Float(0.0)
+    internal var _xMax = Double(0.0)
+    internal var _xMin = Double(0.0)
     internal var _maxSize = CGFloat(0.0)
 
-    public var xMin: Float { return _xMin }
-    public var xMax: Float { return _xMax }
+    public var xMin: Double { return _xMin }
+    public var xMax: Double { return _xMax }
     public var maxSize: CGFloat { return _maxSize }
     
     public func setColor(color: UIColor, alpha: CGFloat)
@@ -27,37 +28,37 @@ public class BubbleChartDataSet: BarLineScatterCandleChartDataSet
         super.setColor(color.colorWithAlphaComponent(alpha))
     }
     
-    internal override func calcMinMax(#start: Int, end: Int)
+    internal override func calcMinMax(start start: Int, end: Int)
     {
         if (yVals.count == 0)
         {
-            return;
+            return
         }
         
-        let entries = yVals as! [BubbleChartDataEntry];
+        let entries = yVals as! [BubbleChartDataEntry]
     
         // need chart width to guess this properly
         
-        var endValue : Int;
+        var endValue : Int
         
         if end == 0
         {
-            endValue = entries.count - 1;
+            endValue = entries.count - 1
         }
         else
         {
-            endValue = end;
+            endValue = end
         }
         
-        _lastStart = start;
-        _lastEnd = end;
+        _lastStart = start
+        _lastEnd = end
         
-        _yMin = yMin(entries[start]);
-        _yMax = yMax(entries[start]);
+        _yMin = yMin(entries[start])
+        _yMax = yMax(entries[start])
         
         for (var i = start; i <= endValue; i++)
         {
-            let entry = entries[i];
+            let entry = entries[i]
 
             let ymin = yMin(entry)
             let ymax = yMax(entry)
@@ -69,7 +70,7 @@ public class BubbleChartDataSet: BarLineScatterCandleChartDataSet
             
             if (ymax > _yMax)
             {
-                _yMax = ymax;
+                _yMax = ymax
             }
             
             let xmin = xMin(entry)
@@ -77,12 +78,12 @@ public class BubbleChartDataSet: BarLineScatterCandleChartDataSet
             
             if (xmin < _xMin)
             {
-                _xMin = xmin;
+                _xMin = xmin
             }
             
             if (xmax > _xMax)
             {
-                _xMax = xmax;
+                _xMax = xmax
             }
 
             let size = largestSize(entry)
@@ -95,26 +96,26 @@ public class BubbleChartDataSet: BarLineScatterCandleChartDataSet
     }
     
     /// Sets/gets the width of the circle that surrounds the bubble when highlighted
-    public var highlightCircleWidth: CGFloat = 2.5;
+    public var highlightCircleWidth: CGFloat = 2.5
     
-    private func yMin(entry: BubbleChartDataEntry) -> Float
+    private func yMin(entry: BubbleChartDataEntry) -> Double
     {
         return entry.value
     }
     
-    private func yMax(entry: BubbleChartDataEntry) -> Float
+    private func yMax(entry: BubbleChartDataEntry) -> Double
     {
         return entry.value
     }
     
-    private func xMin(entry: BubbleChartDataEntry) -> Float
+    private func xMin(entry: BubbleChartDataEntry) -> Double
     {
-        return Float(entry.xIndex)
+        return Double(entry.xIndex)
     }
     
-    private func xMax(entry: BubbleChartDataEntry) -> Float
+    private func xMax(entry: BubbleChartDataEntry) -> Double
     {
-        return Float(entry.xIndex)
+        return Double(entry.xIndex)
     }
     
     private func largestSize(entry: BubbleChartDataEntry) -> CGFloat
