@@ -294,8 +294,8 @@
     self.chartView.backgroundColor=[self getValueByName:@"bgColor"];
     self.chartView.gridBackgroundColor=[self getValueByName:@"bgColor"];
 
-    self.chartView.highlightEnabled=[[self getValueByName:@"highlightIndicatorEnabled"] boolValue];
-    
+    self.chartView.highlightPerTapEnabled=[[self getValueByName:@"highlightIndicatorEnabled"] boolValue];
+    self.chartView.highlightPerDragEnabled=[[self getValueByName:@"highlightIndicatorEnabled"] boolValue];
     //showUnit:,//(可选) 是否显示单位，默认false
     //unit:,//(可选) 单位
 

@@ -205,12 +205,11 @@
     //descTextColor:,//(可选) 描述及图例文本颜色，默认#000000
     self.chartView.descriptionTextColor=[self getValueByName:@"descTextColor"];
     self.chartView.legend.textColor=[self getValueByName:@"descTextColor"];
-    self.chartView.centerTextColor=[self getValueByName:@"descTextColor"];
+    
     //descTextSize:,//(可选) 描述及图例字体大小，默认12
     self.chartView.descriptionFont=[UIFont fontWithName:self.CSSFontName size:[[self getValueByName:@"descTextSize"] floatValue]];
     self.chartView.legend.font=[UIFont fontWithName:self.CSSFontName size:[[self getValueByName:@"descTextSize"] floatValue]];
-    self.chartView.centerTextFont = [UIFont fontWithName:self.CSSFontName size:[[self getValueByName:@"descTextSize"] floatValue]];
-    
+
     
     //showLegend:,//(可选) 是否显示图例，默认false
     self.chartView.legend.enabled=[[self getValueByName:@"showLegend"] boolValue];
@@ -230,7 +229,14 @@
     
     //centerTitle:,//(可选) 中心标题
     //centerSummary:,//(可选) 中心子标题
-    self.chartView.centerText =[NSString stringWithFormat:@"%@\n%@",[self getValueByName:@"centerTitle"],[self getValueByName:@"centerSummary"]];
+    
+    NSMutableAttributedString *centerText=[[NSMutableAttributedString alloc]initWithString:[NSString stringWithFormat:@"%@\n%@",[self getValueByName:@"centerTitle"],[self getValueByName:@"centerSummary"]]];
+    NSRange range=NSMakeRange(0, centerText.length);
+    [centerText addAttribute:NSFontAttributeName value:[UIFont fontWithName:self.CSSFontName size:[[self getValueByName:@"descTextSize"] floatValue]] range:range];
+    [centerText addAttribute:NSForegroundColorAttributeName value:[self getValueByName:@"descTextColor"] range:range];
+    self.chartView.centerAttributedText=centerText;
+    
+    
     
     //centerRadius:,//(可选) 中心圆半径百分比，默认40
     self.chartView.holeRadiusPercent =([[self getValueByName:@"centerRadius"] floatValue]/100.f);

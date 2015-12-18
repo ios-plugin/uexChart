@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#ifndef EUExChart_IDE_Support
 #import "EUExChartSwiftHeader.h"
+#else
+#import <Charts/Charts.h>
+#endif
 #import "ChartModelItem.h"
 #import "EUtility.h"
 
@@ -18,9 +22,9 @@ typedef NS_ENUM(NSInteger, uexChartType){
     
 };
 
-@protocol uexChartDelegate <NSObject>
+@protocol uexChartDelegate <ChartViewDelegate,NSObject>
 
-
+@optional
 
 
 -(void) uexChartWillReportLog:(NSArray *)logArray
