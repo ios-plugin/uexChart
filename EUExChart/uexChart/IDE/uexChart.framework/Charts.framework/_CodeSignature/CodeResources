@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Charts-Swift.h</key>
 		<data>
-		6cJZMDAnZSPEoiM2v20zueqbzBw=
+		cztSQ3bTRiWTFE69cSparwcx2rA=
 		</data>
 		<key>Headers/Charts.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hClW0FFpOLB7C+K+X4ivPWKq2u4=
+		VDu4WTN5WH0g+HwktuhBmwEenYs=
 		</data>
 		<key>Modules/Charts.swiftmodule/arm.swiftdoc</key>
 		<data>
-		7MwdQ7iIBpmJdoJD7sE1et/QwCs=
+		3bIAkKsdPwwqvg3sFv/phmnUBnU=
 		</data>
 		<key>Modules/Charts.swiftmodule/arm.swiftmodule</key>
 		<data>
-		JmeMY2p9Ofknfped3VJNdLiKMqY=
+		yEGshTqbxrrfkPzXMNcs0H0Cxds=
 		</data>
 		<key>Modules/Charts.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		iWpHKjv5Lhcnk0RHDcxmXNOj9sk=
+		GCf0keFN/c1z0GRl1XLDWvfb4XY=
 		</data>
 		<key>Modules/Charts.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		w8KEQlF3/ixX378L3iA64gsZGW4=
+		Y/0nPXn2kdAS888pN77StW/+N4E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -38,14 +38,14 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		G/dmUJqhsBv+7dBmwOGWD3Hl2AM=
+		JKbXoT98W7zj86Z2W3qbeHZe/kE=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/Charts-Swift.h</key>
 		<data>
-		6cJZMDAnZSPEoiM2v20zueqbzBw=
+		cztSQ3bTRiWTFE69cSparwcx2rA=
 		</data>
 		<key>Headers/Charts.h</key>
 		<data>
@@ -53,19 +53,19 @@
 		</data>
 		<key>Modules/Charts.swiftmodule/arm.swiftdoc</key>
 		<data>
-		7MwdQ7iIBpmJdoJD7sE1et/QwCs=
+		3bIAkKsdPwwqvg3sFv/phmnUBnU=
 		</data>
 		<key>Modules/Charts.swiftmodule/arm.swiftmodule</key>
 		<data>
-		JmeMY2p9Ofknfped3VJNdLiKMqY=
+		yEGshTqbxrrfkPzXMNcs0H0Cxds=
 		</data>
 		<key>Modules/Charts.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		iWpHKjv5Lhcnk0RHDcxmXNOj9sk=
+		GCf0keFN/c1z0GRl1XLDWvfb4XY=
 		</data>
 		<key>Modules/Charts.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		w8KEQlF3/ixX378L3iA64gsZGW4=
+		Y/0nPXn2kdAS888pN77StW/+N4E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,7 +73,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		G/dmUJqhsBv+7dBmwOGWD3Hl2AM=
+		JKbXoT98W7zj86Z2W3qbeHZe/kE=
 		</data>
 	</dict>
 	<key>rules</key>
