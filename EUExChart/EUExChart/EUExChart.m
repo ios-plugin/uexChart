@@ -220,8 +220,11 @@
 - (void)chartValueSelected:(ChartViewBase * __nonnull)chartView entry:(ChartDataEntry * __nonnull)entry dataSetIndex:(NSInteger)dataSetIndex highlight:(ChartHighlight * __nonnull)highlight
 {
     
+    NSMutableDictionary *dict =[NSMutableDictionary dictionary];
+    [dict setValue:@(entry.value) forKey:@"value"];
+    [dict setValue:@(dataSetIndex) forKey:@"dataSetIndex"];
+    [dict setValue:@(entry.xIndex) forKey:@"xIndex"];
     
-    NSDictionary *dict=[NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:entry.value] forKey:@"value"];
     [self returnJsonWithName:@"onValueSelected" Object:dict];
 }
 
