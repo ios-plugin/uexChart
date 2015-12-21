@@ -183,8 +183,9 @@
     for(int i=0;i<[logArray count];i++){
         [logStr appendString:[NSString stringWithFormat:@"%@\n",logArray[i]]];
     }
-    
-    //NSLog(logStr);
+#ifdef DEBUG
+    NSLog(@"%@",logStr);
+#endif
     [self returnJsonWithName:@"log" Object:logStr];
 }
 -(void) uexChartDidFatalErrorHappen:(NSString *)errorStr fromChartId:(NSString *)identifier chartType:(uexChartType) type{

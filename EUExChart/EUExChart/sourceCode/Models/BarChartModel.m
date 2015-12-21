@@ -11,7 +11,7 @@
 
 
 @property (nonatomic,strong) BarChartView *chartView;
-@property(nonatomic,strong) NSMutableArray *xData;
+@property (nonatomic,strong) NSMutableArray *xData;
 @end
 
 @implementation BarChartModel
@@ -48,6 +48,9 @@
     [self.modelItems addObject:[ChartModelItem itemWithValue:nil
                                                         name:@"extraLines"
                                                         type:uexChartModelItemOptionalObject]];
+    [self.modelItems addObject:[ChartModelItem itemWithValue:nil
+                                                        name:@"option"
+                                                        type:uexChartModelItemOptionalObject]];
 
     
 }
@@ -69,7 +72,7 @@
             [self.xData addObject:[NSString stringWithFormat:@"%@",xData[i]]];
         }
     }else{
-        [self fatalErrorHappenedWithReportString:@"Cannot load xData"];
+        [self.logArray addObject:@"xData not set"];
     }
     
     if([self.dataDict objectForKey:@"bars"]&&[[self.dataDict objectForKey:@"bars"] isKindOfClass:[NSArray class]]){
@@ -93,6 +96,11 @@
 -(void)loadDataArray:(NSArray *)dataArray{
     BOOL isError;
     NSMutableDictionary *tmpDict,*resultDict=nil;
+    BOOL xDataAvailable=YES;
+    if(!self.xData){
+        xDataAvailable=NO;
+        self.xData=[NSMutableArray array];
+    }
     for(int i=0;i<[dataArray count];i++){
         isError=NO;
         resultDict=nil;
@@ -110,7 +118,7 @@
                 [self log:[NSString stringWithFormat:@"dataArray#%i barColor",i] withString:@"successfully!"];
             }else isError=YES;
             
-            
+        
                      
             
             
@@ -126,13 +134,17 @@
                         
                         if([pointTmp objectForKey:@"xValue"]){
                             NSInteger xIndex=-1;
+                            NSString *xValue=[NSString stringWithFormat:@"%@",[pointTmp objectForKey:@"xValue"]];
+                            if(!xDataAvailable && ![self.xData containsObject:xValue]){
+                                [self.xData addObject:xValue];
+                            }
                             for(int k=0;k<[self.xData count];k++){
-                                if([[NSString stringWithFormat:@"%@",[pointTmp objectForKey:@"xValue"]] isEqual:self.xData[k]]){
+                                if([xValue isEqual:self.xData[k]]){
                                     xIndex=k;
                                 }
                             }
                             if(xIndex!= -1){
-                                [pointDict setObject:[NSNumber numberWithInteger:xIndex] forKey:@"xIndex"];
+                                [pointDict setObject:@(xIndex) forKey:@"xIndex"];
                             }else completeData=NO;
                             
                         }else completeData=NO;
@@ -323,9 +335,31 @@
     self.chartView.legend.xEntrySpace = 7.f;
     self.chartView.legend.yEntrySpace = 5.f;
     self.chartView.data=data;
-    self.chartView.dragEnabled=NO;
-    [self.chartView setNeedsDisplay];
     
+    self.chartView.scaleXEnabled=YES;
+    self.chartView.scaleYEnabled=YES;
+    self.chartView.dragEnabled=YES;
+    NSDictionary *option=[self getValueByName:@"option"];
+    if(!option){
+        [self.chartView setNeedsDisplay];
+        return;
+    }
+    CGFloat scaleX=option[@"initZoomX"]?[option[@"initZoomX"] floatValue]:1;
+    CGFloat scaleY=option[@"initZoomY"]?[option[@"initZoomY"] floatValue]:1;
+    CGFloat positionX=option[@"initPositionX"]?[option[@"initPositionX"] floatValue]:0;
+    CGFloat positionY=option[@"initPositionY"]?[option[@"initPositionY"] floatValue]:0;
+    [self.chartView zoom:scaleX scaleY:scaleY x:positionX y:positionY];
+    
+    if (option[@"isSupportDrag"]) {
+        self.chartView.dragEnabled=[option[@"isSupportDrag"] boolValue];
+    }
+    if (option[@"isSupportZoomX"]) {
+        self.chartView.scaleXEnabled=[option[@"isSupportZoomX"] boolValue];
+    }
+    if (option[@"isSupportZoomY"]) {
+        self.chartView.scaleYEnabled=[option[@"isSupportZoomY"] boolValue];
+    }
+    [self.chartView setNeedsDisplay];
 }
 
 
