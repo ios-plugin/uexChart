@@ -282,7 +282,9 @@
             dataSet.fillAlpha=1.f;
 
         }
-        
+        NSNumberFormatter *valueFormatter=[[NSNumberFormatter alloc]init];
+        valueFormatter.numberStyle=NSNumberFormatterNoStyle;
+        dataSet.valueFormatter=valueFormatter;
         [yData addObject:dataSet];
         
 

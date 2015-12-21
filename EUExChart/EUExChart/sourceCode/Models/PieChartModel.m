@@ -162,7 +162,6 @@
     //showValue:,//(可选) 是否显示value，默认true
     dataSet.drawValuesEnabled= [[self getValueByName:@"showValue"] boolValue];
     
-    
     PieChartData *data = [[PieChartData alloc] initWithXVals:xVals dataSet:dataSet];
     NSNumberFormatter *pFormatter = [[NSNumberFormatter alloc] init];
     

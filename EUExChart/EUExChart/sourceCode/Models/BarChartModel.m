@@ -218,20 +218,22 @@
         }
         
         BarChartDataSet *dataSet = [[BarChartDataSet alloc] initWithYVals:yVals label:[NSString stringWithFormat:@"bar data%i",i]];
-
         dataSet.label=[dataDict objectForKey:@"barName"];
           //showValue:,//(可选) 是否显示value，默认true
         dataSet.drawValuesEnabled= [[self getValueByName:@"showValue"] boolValue];
         dataSet.colors=@[[dataDict objectForKey:@"barColor"]];
-
-        [yData addObject:dataSet];
         
+        NSNumberFormatter *valueFormatter=[[NSNumberFormatter alloc]init];
+        valueFormatter.numberStyle=NSNumberFormatterNoStyle;
+        dataSet.valueFormatter=valueFormatter;
+        [yData addObject:dataSet];
         
     }
     
     
     
     BarChartData *data = [[BarChartData alloc] initWithXVals:self.xData dataSets:yData];
+    
     ChartYAxis *leftAxis = _chartView.leftAxis;
     ChartXAxis *xAxis = _chartView.xAxis;
     
@@ -260,7 +262,6 @@
     
     //valueTextColor:,//(可选) 值的文本颜色，默认#ffffff
     [data setValueTextColor:[self getValueByName:@"valueTextColor"]];
-    
     
     //valueTextSize:,//(可选) 值的字体大小，默认13
     [data setValueFont:[UIFont fontWithName:self.CSSFontName size:[[self getValueByName:@"valueTextSize"] floatValue]]];
