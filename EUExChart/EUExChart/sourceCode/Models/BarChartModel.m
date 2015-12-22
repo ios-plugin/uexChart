@@ -225,6 +225,7 @@
         
         NSNumberFormatter *valueFormatter=[[NSNumberFormatter alloc]init];
         valueFormatter.numberStyle=NSNumberFormatterNoStyle;
+        valueFormatter.maximumFractionDigits = 5;
         dataSet.valueFormatter=valueFormatter;
         [yData addObject:dataSet];
         
@@ -312,6 +313,7 @@
     
     leftAxis.drawGridLinesEnabled = YES;
     leftAxis.valueFormatter = [[NSNumberFormatter alloc] init];
+    leftAxis.valueFormatter.maximumFractionDigits = 5;
     leftAxis.valueFormatter.negativeSuffix = symbol;
     leftAxis.valueFormatter.positiveSuffix = symbol;
     leftAxis.startAtZeroEnabled=NO;
