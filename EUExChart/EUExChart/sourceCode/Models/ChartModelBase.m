@@ -285,7 +285,7 @@
         }
         if([dict objectForKey:@"isSolid"]){
             id isSolid=[dict objectForKey:@"isSolid"];
-            if([isSolid integerValue]==1||[isSolid isEqual:@"true"]){
+            if(![isSolid boolValue]||[isSolid isEqual:@"false"]){
                 extraLine.lineDashLengths=@[@5.f, @5.f];
             }
             
