@@ -7,55 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21C6ED63FEC59FF7311FE212 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AFB3F4C14AF77E99AA2E9A /* MobileCoreServices.framework */; };
-		2248B3382C561BCAEF8B392A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E33B46E8C42E4B00F0DD6E90 /* SystemConfiguration.framework */; };
-		424ACF4B1C23E96D00EEC1F8 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424ACF4A1C23E96D00EEC1F8 /* Charts.framework */; };
-		424AD0041C23F01300EEC1F8 /* Charts.framework in Resources */ = {isa = PBXBuildFile; fileRef = 424ACF4A1C23E96D00EEC1F8 /* Charts.framework */; };
+		1BFBAE1E2FE70A5D647F3EC5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF429EB2D1D364B982E5A12A /* libz.tbd */; };
+		2E5F6AE038D4F596AEF4DAB2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE85751AC0E99551A146B14 /* SystemConfiguration.framework */; };
+		36EC612F1C2FF089BB216DFC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A318B8D2C2584EA1FB3439 /* MobileCoreServices.framework */; };
+		400B50A561708A9D390C27F5 /* CFNetWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7860E21449801D753BF11C8B /* CFNetWork.framework */; };
 		4260D6561B21F7A400A894EE /* EUExChartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260D6551B21F7A400A894EE /* EUExChartManager.m */; };
 		4260D65A1B22039200A894EE /* BarChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260D6591B22039200A894EE /* BarChartModel.m */; };
 		4260D6631B22048300A894EE /* LineChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260D6621B22048300A894EE /* LineChartModel.m */; };
-		4BFF73EF20A51BDEFA8CCD9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A197885086FE2692EF6C2238 /* UIKit.framework */; };
-		570302790F7E390A8C4B6B4C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 78ACFACEDBCE6B291B7E3CA8 /* libc++.tbd */; };
-		59D15083272A9F98D27B699C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC320C71CC9AF6E2AB6EC0F /* ImageIO.framework */; };
-		677ED8D5E9AD9AC3749ADE23 /* AppCanEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9638EF8D213717CFA3952655 /* AppCanEngine.framework */; };
-		6886C9A04A82FC5A8164835E /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6B8BF1AE0BEF8B6158D437 /* libstdc++.tbd */; };
-		82C62B35EB8FF1FEE3E3149B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A13034A990160F59E21BD11 /* libsqlite3.tbd */; };
-		89AE4985A3DEC4213B3DBD67 /* CFNetWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7586E74B33120556E091CF8 /* CFNetWork.framework */; };
-		9F0DA65EC08F486EEE5F3DB5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E02ACEC8BCD223F8DD248A /* MapKit.framework */; };
-		A5A7DE54826A80602A70600B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76A44A77EAF2DB11F0D333B /* AudioToolbox.framework */; };
+		42B70D701C44EC0600B340D5 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B70D6F1C44EC0600B340D5 /* Charts.framework */; };
+		42B70D721C44F0B900B340D5 /* Charts.framework in Resources */ = {isa = PBXBuildFile; fileRef = 42B70D6F1C44EC0600B340D5 /* Charts.framework */; };
+		547752CFB80C9E1FE82C55B1 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB01C4F1B08B60F925C3B7A /* libc++.tbd */; };
+		5C42F0064DA1C1BCFD4DD18F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF09405A4E238F6C9081C584 /* ImageIO.framework */; };
+		6B679F98A6465F662B791681 /* AppCanEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0187939177E3047AE58AA758 /* AppCanEngine.framework */; };
+		8BF47159988AF825C8BDD79B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E76116F2A76AA23587CF5C /* QuartzCore.framework */; };
+		9B48BB0401561D1CA020EC10 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BA004CB7EAD7D385439CC4 /* libsqlite3.tbd */; };
+		ADD02A558200E88217A0506C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE70A7C3DFBB70219004822 /* AudioToolbox.framework */; };
+		B633B345C8F95EA495D458F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0CFD5ADDB78037BB1315C4 /* UIKit.framework */; };
 		C6099B671B16C5F000DC160A /* PieChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6099B661B16C5F000DC160A /* PieChartModel.m */; };
 		C64D82381B15CBDE00DF2105 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64D82371B15CBDE00DF2105 /* UIKit.framework */; };
 		C64D823A1B15CC1700DF2105 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64D82391B15CC1700DF2105 /* CoreGraphics.framework */; };
 		C6567EF81B157BF9003AB65E /* EUExChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C6567EF71B157BF9003AB65E /* EUExChart.m */; };
 		C6740B8F1B16E62A001CF948 /* ChartModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C6740B8E1B16E62A001CF948 /* ChartModelBase.m */; };
 		C684C0871B1815F400469ADF /* ChartModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C684C0861B1815F400469ADF /* ChartModelItem.m */; };
-		EC4C25025856A7EC66953FF7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DEA348B4D74F21998A7807 /* libz.tbd */; };
-		FD5C8AE44DC8D356290EE872 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80092886C1DCE0293CFC9695 /* QuartzCore.framework */; };
+		D092CE907F7C9DD98DA8DD40 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9466982072FD86191E4F2EE6 /* libstdc++.tbd */; };
+		DD7A462095EE8DFD35FF5F9A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59700006B5CD0E8A51925C0 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A13034A990160F59E21BD11 /* libsqlite3.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		3F6B8BF1AE0BEF8B6158D437 /* libstdc++.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		424ACE9D1C23E67700EEC1F8 /* EUExChart_IDE_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExChart_IDE_PrefixHeader.pch; sourceTree = "<group>"; };
-		424ACF4A1C23E96D00EEC1F8 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Charts.framework; sourceTree = "<group>"; };
+		0187939177E3047AE58AA758 /* AppCanEngine.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AppCanEngine.framework; path = "../../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource/AppCanEngine.framework"; sourceTree = "<group>"; };
+		1B0CFD5ADDB78037BB1315C4 /* UIKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1D1A36BAA16D478F841FFD53 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = info.plist; path = "../../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource/info.plist"; sourceTree = "<group>"; };
+		3BB01C4F1B08B60F925C3B7A /* libc++.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		4260D6541B21F7A400A894EE /* EUExChartManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExChartManager.h; sourceTree = "<group>"; };
 		4260D6551B21F7A400A894EE /* EUExChartManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUExChartManager.m; sourceTree = "<group>"; };
 		4260D6581B22039200A894EE /* BarChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChartModel.h; sourceTree = "<group>"; };
 		4260D6591B22039200A894EE /* BarChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChartModel.m; sourceTree = "<group>"; };
 		4260D6611B22048300A894EE /* LineChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartModel.h; sourceTree = "<group>"; };
 		4260D6621B22048300A894EE /* LineChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartModel.m; sourceTree = "<group>"; };
-		58EBC7FDEB32441F40B6AC9F /* CoreGraphics.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		78ACFACEDBCE6B291B7E3CA8 /* libc++.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		80092886C1DCE0293CFC9695 /* QuartzCore.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		9638EF8D213717CFA3952655 /* AppCanEngine.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AppCanEngine.framework; path = "../../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource/AppCanEngine.framework"; sourceTree = "<group>"; };
-		A197885086FE2692EF6C2238 /* UIKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A4E02ACEC8BCD223F8DD248A /* MapKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		B073BDCF9D87FD6A1DC99C01 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = info.plist; path = "../../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource/info.plist"; sourceTree = "<group>"; };
-		C1DEA348B4D74F21998A7807 /* libz.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		42B70D6F1C44EC0600B340D5 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Charts.framework; sourceTree = "<group>"; };
+		4EE70A7C3DFBB70219004822 /* AudioToolbox.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4EE85751AC0E99551A146B14 /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		54E76116F2A76AA23587CF5C /* QuartzCore.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7860E21449801D753BF11C8B /* CFNetWork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetWork.framework; path = System/Library/Frameworks/CFNetWork.framework; sourceTree = SDKROOT; };
+		9466982072FD86191E4F2EE6 /* libstdc++.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		A59700006B5CD0E8A51925C0 /* MapKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B7FD0427A189FECE16E4141E /* CoreGraphics.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C6099B611B16A08700DC160A /* EUExChartSwiftHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExChartSwiftHeader.h; sourceTree = "<group>"; };
 		C6099B651B16C5F000DC160A /* PieChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartModel.h; sourceTree = "<group>"; };
 		C6099B661B16C5F000DC160A /* PieChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartModel.m; sourceTree = "<group>"; };
 		C6099B681B16C67800DC160A /* EUExChartModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExChartModels.h; sourceTree = "<group>"; };
+		C6099B691B16CA7000DC160A /* EUExChart_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExChart_PrefixHeader.pch; sourceTree = "<group>"; };
 		C64D82371B15CBDE00DF2105 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C64D82391B15CC1700DF2105 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C6567ED81B15795D003AB65E /* uexChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = uexChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,11 +79,10 @@
 		C6740B8E1B16E62A001CF948 /* ChartModelBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartModelBase.m; sourceTree = "<group>"; };
 		C684C0851B1815F400469ADF /* ChartModelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartModelItem.h; sourceTree = "<group>"; };
 		C684C0861B1815F400469ADF /* ChartModelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartModelItem.m; sourceTree = "<group>"; };
-		D7586E74B33120556E091CF8 /* CFNetWork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetWork.framework; path = System/Library/Frameworks/CFNetWork.framework; sourceTree = SDKROOT; };
-		D76A44A77EAF2DB11F0D333B /* AudioToolbox.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		E33B46E8C42E4B00F0DD6E90 /* SystemConfiguration.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		E9AFB3F4C14AF77E99AA2E9A /* MobileCoreServices.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		ECC320C71CC9AF6E2AB6EC0F /* ImageIO.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C8BA004CB7EAD7D385439CC4 /* libsqlite3.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		DF429EB2D1D364B982E5A12A /* libz.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F5A318B8D2C2584EA1FB3439 /* MobileCoreServices.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FF09405A4E238F6C9081C584 /* ImageIO.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,64 +90,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B70D701C44EC0600B340D5 /* Charts.framework in Frameworks */,
 				C64D823A1B15CC1700DF2105 /* CoreGraphics.framework in Frameworks */,
-				424ACF4B1C23E96D00EEC1F8 /* Charts.framework in Frameworks */,
 				C64D82381B15CBDE00DF2105 /* UIKit.framework in Frameworks */,
-				9F0DA65EC08F486EEE5F3DB5 /* MapKit.framework in Frameworks */,
-				A5A7DE54826A80602A70600B /* AudioToolbox.framework in Frameworks */,
-				2248B3382C561BCAEF8B392A /* SystemConfiguration.framework in Frameworks */,
-				59D15083272A9F98D27B699C /* ImageIO.framework in Frameworks */,
-				89AE4985A3DEC4213B3DBD67 /* CFNetWork.framework in Frameworks */,
-				21C6ED63FEC59FF7311FE212 /* MobileCoreServices.framework in Frameworks */,
-				4BFF73EF20A51BDEFA8CCD9D /* UIKit.framework in Frameworks */,
-				FD5C8AE44DC8D356290EE872 /* QuartzCore.framework in Frameworks */,
-				570302790F7E390A8C4B6B4C /* libc++.tbd in Frameworks */,
-				6886C9A04A82FC5A8164835E /* libstdc++.tbd in Frameworks */,
-				82C62B35EB8FF1FEE3E3149B /* libsqlite3.tbd in Frameworks */,
-				EC4C25025856A7EC66953FF7 /* libz.tbd in Frameworks */,
-				677ED8D5E9AD9AC3749ADE23 /* AppCanEngine.framework in Frameworks */,
+				DD7A462095EE8DFD35FF5F9A /* MapKit.framework in Frameworks */,
+				ADD02A558200E88217A0506C /* AudioToolbox.framework in Frameworks */,
+				2E5F6AE038D4F596AEF4DAB2 /* SystemConfiguration.framework in Frameworks */,
+				5C42F0064DA1C1BCFD4DD18F /* ImageIO.framework in Frameworks */,
+				400B50A561708A9D390C27F5 /* CFNetWork.framework in Frameworks */,
+				36EC612F1C2FF089BB216DFC /* MobileCoreServices.framework in Frameworks */,
+				B633B345C8F95EA495D458F6 /* UIKit.framework in Frameworks */,
+				8BF47159988AF825C8BDD79B /* QuartzCore.framework in Frameworks */,
+				547752CFB80C9E1FE82C55B1 /* libc++.tbd in Frameworks */,
+				D092CE907F7C9DD98DA8DD40 /* libstdc++.tbd in Frameworks */,
+				9B48BB0401561D1CA020EC10 /* libsqlite3.tbd in Frameworks */,
+				1BFBAE1E2FE70A5D647F3EC5 /* libz.tbd in Frameworks */,
+				6B679F98A6465F662B791681 /* AppCanEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		424ACE9C1C23E61B00EEC1F8 /* IDE Supporting Files */ = {
+		0ED7BAAFB8512FFBD103C025 /* IDE-Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				424ACF4A1C23E96D00EEC1F8 /* Charts.framework */,
-				424ACE9D1C23E67700EEC1F8 /* EUExChart_IDE_PrefixHeader.pch */,
-			);
-			path = "IDE Supporting Files";
-			sourceTree = "<group>";
-		};
-		45DE5AC4F042AEF662EE0CD3 /* AppCanEngine */ = {
-			isa = PBXGroup;
-			children = (
-				9638EF8D213717CFA3952655 /* AppCanEngine.framework */,
-				B073BDCF9D87FD6A1DC99C01 /* info.plist */,
-			);
-			path = AppCanEngine;
-			sourceTree = "<group>";
-		};
-		B4E5DBAEFDEA1444A09DA8FE /* IDE-Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A4E02ACEC8BCD223F8DD248A /* MapKit.framework */,
-				D76A44A77EAF2DB11F0D333B /* AudioToolbox.framework */,
-				E33B46E8C42E4B00F0DD6E90 /* SystemConfiguration.framework */,
-				ECC320C71CC9AF6E2AB6EC0F /* ImageIO.framework */,
-				D7586E74B33120556E091CF8 /* CFNetWork.framework */,
-				E9AFB3F4C14AF77E99AA2E9A /* MobileCoreServices.framework */,
-				A197885086FE2692EF6C2238 /* UIKit.framework */,
-				58EBC7FDEB32441F40B6AC9F /* CoreGraphics.framework */,
-				80092886C1DCE0293CFC9695 /* QuartzCore.framework */,
-				78ACFACEDBCE6B291B7E3CA8 /* libc++.tbd */,
-				3F6B8BF1AE0BEF8B6158D437 /* libstdc++.tbd */,
-				2A13034A990160F59E21BD11 /* libsqlite3.tbd */,
-				C1DEA348B4D74F21998A7807 /* libz.tbd */,
+				A59700006B5CD0E8A51925C0 /* MapKit.framework */,
+				4EE70A7C3DFBB70219004822 /* AudioToolbox.framework */,
+				4EE85751AC0E99551A146B14 /* SystemConfiguration.framework */,
+				FF09405A4E238F6C9081C584 /* ImageIO.framework */,
+				7860E21449801D753BF11C8B /* CFNetWork.framework */,
+				F5A318B8D2C2584EA1FB3439 /* MobileCoreServices.framework */,
+				1B0CFD5ADDB78037BB1315C4 /* UIKit.framework */,
+				B7FD0427A189FECE16E4141E /* CoreGraphics.framework */,
+				54E76116F2A76AA23587CF5C /* QuartzCore.framework */,
+				3BB01C4F1B08B60F925C3B7A /* libc++.tbd */,
+				9466982072FD86191E4F2EE6 /* libstdc++.tbd */,
+				C8BA004CB7EAD7D385439CC4 /* libsqlite3.tbd */,
+				DF429EB2D1D364B982E5A12A /* libz.tbd */,
 			);
 			path = "IDE-Frameworks";
+			sourceTree = "<group>";
+		};
+		5E86998DE19DFB9A95F4C173 /* AppCanEngine */ = {
+			isa = PBXGroup;
+			children = (
+				0187939177E3047AE58AA758 /* AppCanEngine.framework */,
+				1D1A36BAA16D478F841FFD53 /* info.plist */,
+			);
+			path = AppCanEngine;
 			sourceTree = "<group>";
 		};
 		C6099B631B16A93900DC160A /* Models */ = {
@@ -180,12 +171,11 @@
 		C6567ECF1B15795D003AB65E = {
 			isa = PBXGroup;
 			children = (
-				424ACE9C1C23E61B00EEC1F8 /* IDE Supporting Files */,
 				C6567EDA1B15795D003AB65E /* EUExChart */,
 				C64D82361B15CBC400DF2105 /* Frameworks */,
 				C6567ED91B15795D003AB65E /* Products */,
-				B4E5DBAEFDEA1444A09DA8FE /* IDE-Frameworks */,
-				45DE5AC4F042AEF662EE0CD3 /* AppCanEngine */,
+				0ED7BAAFB8512FFBD103C025 /* IDE-Frameworks */,
+				5E86998DE19DFB9A95F4C173 /* AppCanEngine */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,11 +213,13 @@
 		C6567EF51B157BD5003AB65E /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				42B70D6F1C44EC0600B340D5 /* Charts.framework */,
 				4260D6541B21F7A400A894EE /* EUExChartManager.h */,
 				4260D6551B21F7A400A894EE /* EUExChartManager.m */,
 				C6099B631B16A93900DC160A /* Models */,
 				C6567F9B1B157DCE003AB65E /* JSON */,
 				C6099B611B16A08700DC160A /* EUExChartSwiftHeader.h */,
+				C6099B691B16CA7000DC160A /* EUExChart_PrefixHeader.pch */,
 			);
 			path = sourceCode;
 			sourceTree = "<group>";
@@ -256,7 +248,7 @@
 			buildPhases = (
 				C6567ED41B15795D003AB65E /* Sources */,
 				C6567ED51B15795D003AB65E /* Frameworks */,
-				424AD0031C23F00F00EEC1F8 /* Resources */,
+				42B70D711C44F0B400B340D5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -273,7 +265,6 @@
 		C6567ED01B15795D003AB65E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = AppCan;
 				TargetAttributes = {
@@ -300,11 +291,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		424AD0031C23F00F00EEC1F8 /* Resources */ = {
+		42B70D711C44F0B400B340D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				424AD0041C23F01300EEC1F8 /* Charts.framework in Resources */,
+				42B70D721C44F0B900B340D5 /* Charts.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +403,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = com.appcan.ide;
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Sea King Biological Technology Co., Ltd.";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexChart/IDE/";
@@ -426,16 +416,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/EUExChart/sourceCode",
 					"$(SRCROOT)/../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource",
-					"$(PROJECT_DIR)/IDE",
-					"\"$SRCROOT/IDE Supporting Files\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/IDE Supporting Files/EUExChart_IDE_PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inhenrit)",
-					"$(SRCROOT)/../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource",
-				);
+				GCC_PREFIX_HEADER = $SRCROOT/EUExChart/sourceCode/EUExChart_PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource";
 				INFOPLIST_FILE = "$(SRCROOT)/../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource/info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -450,8 +436,6 @@
 				PRODUCT_NAME = uexChart;
 				PROVISIONING_PROFILE = "756a3ff2-be53-4d08-862a-c050d0dfa3d9";
 				SKIP_INSTALL = YES;
-				SWIFT_DISABLE_SAFETY_CHECKS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -459,7 +443,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_IDENTIFIER = com.appcan.ide;
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Sea King Biological Technology Co., Ltd.";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexChart/IDE/";
@@ -473,16 +456,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/EUExChart/sourceCode",
 					"$(SRCROOT)/../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource",
-					"$(PROJECT_DIR)/IDE",
-					"\"$SRCROOT/IDE Supporting Files\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/IDE Supporting Files/EUExChart_IDE_PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inhenrit)",
-					"$(SRCROOT)/../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource",
-				);
+				GCC_PREFIX_HEADER = $SRCROOT/EUExChart/sourceCode/EUExChart_PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource";
 				INFOPLIST_FILE = "$(SRCROOT)/../../AppCanPluginTools-iOS/resource/IDEPluginProjectPackageResource/info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -497,7 +476,6 @@
 				PRODUCT_NAME = uexChart;
 				PROVISIONING_PROFILE = "756a3ff2-be53-4d08-862a-c050d0dfa3d9";
 				SKIP_INSTALL = YES;
-				SWIFT_DISABLE_SAFETY_CHECKS = NO;
 			};
 			name = Release;
 		};

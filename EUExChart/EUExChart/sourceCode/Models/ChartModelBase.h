@@ -7,11 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#ifndef EUExChart_IDE_Support
-#import "EUExChartSwiftHeader.h"
-#else
+
 #import <Charts/Charts.h>
-#endif
+
 #import "ChartModelItem.h"
 #import "EUtility.h"
 

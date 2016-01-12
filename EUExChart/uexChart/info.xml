@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
     <plugin
-        uexName="uexChart" version="3.0.3" build="3">
-        <info>3:barChart和lineChart新增option参数</info>
+        uexName="uexChart" version="3.0.4" build="4">
+        <info>4:改用embedFrameworks方式调用,提高编译速度</info>
+        <build>3:barChart和lineChart新增option参数</build>
         <build>2:使用Swift2.1编译，支持IDE</build>
         <build>1:使用Swift2.0的库，支持Xcode7</build>
         <build>0:几何图表(uexChart)插件 for iOS</build>
