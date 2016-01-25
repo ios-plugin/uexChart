@@ -44,6 +44,7 @@
 @property (nonatomic,strong) NSMutableDictionary *chartDict;
 @property (nonatomic,assign) BOOL debugMode;
 @property (nonatomic,strong) EUExChartManager *chartMgr;
+@property (nonatomic,strong) NSString *reportID;
 @end
 
 
@@ -209,7 +210,7 @@
         [chartView animateWithXAxisDuration:duration yAxisDuration:duration];
     }
     
-    
+    _reportID = identifier;
 }
 
 #pragma mark - chartView Delegate
@@ -221,6 +222,7 @@
 {
     
     NSMutableDictionary *dict =[NSMutableDictionary dictionary];
+    [dict setValue:_reportID forKey:@"id"];
     [dict setValue:@(entry.value) forKey:@"value"];
     [dict setValue:@(dataSetIndex) forKey:@"dataSetIndex"];
     [dict setValue:@(entry.xIndex) forKey:@"xIndex"];
