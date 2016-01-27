@@ -314,7 +314,7 @@
     //unit:,//(可选) 单位
 
     
-    
+    self.chartView.tag = [self.identifier intValue];
 
     
     //valueTextColor:,//(可选) 值的文本颜色，默认#ffffff

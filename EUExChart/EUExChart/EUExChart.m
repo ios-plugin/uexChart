@@ -221,6 +221,8 @@
 {
     
     NSMutableDictionary *dict =[NSMutableDictionary dictionary];
+    NSString *string = [NSString stringWithFormat:@"%ld",(long)chartView.tag];
+    [dict setValue:string forKey:@"id"];
     [dict setValue:@(entry.value) forKey:@"value"];
     [dict setValue:@(dataSetIndex) forKey:@"dataSetIndex"];
     [dict setValue:@(entry.xIndex) forKey:@"xIndex"];
