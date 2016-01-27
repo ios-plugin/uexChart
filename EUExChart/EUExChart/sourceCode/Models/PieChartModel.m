@@ -224,7 +224,7 @@
     //centerColor:,//(可选) 中心圆颜色，默认透明
     self.chartView.holeColor=[self getValueByName:@"centerColor"];
     
-    
+    self.chartView.tag = [self.identifier intValue];
     
     //centerTitle:,//(可选) 中心标题
     //centerSummary:,//(可选) 中心子标题

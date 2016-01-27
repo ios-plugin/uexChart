@@ -287,7 +287,7 @@
     self.chartView.legend.position=[[self getValueByName:@"legendPosition"] integerValue];
     //showTitle:,//(可选) 是否显示title，默认true
     
-    
+    self.chartView.tag = [self.identifier intValue];
     
     
 
