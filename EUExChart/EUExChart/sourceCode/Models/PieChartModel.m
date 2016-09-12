@@ -251,7 +251,8 @@
     self.chartView.rotationAngle = 0.f;
     self.chartView.rotationEnabled = YES;
     
-    self.chartView.holeTransparent =YES;
+    self.chartView.drawHoleEnabled = YES;
+    //self.chartView.holeTransparent =YES;
     self.chartView.legend.xEntrySpace = 7.f;
     self.chartView.legend.yEntrySpace = 5.f;
     self.chartView.data=data;

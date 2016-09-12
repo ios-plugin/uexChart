@@ -6,75 +6,116 @@
 	<dict>
 		<key>Headers/Charts-Swift.h</key>
 		<data>
-		cztSQ3bTRiWTFE69cSparwcx2rA=
+		3t15xIzWb38sfVIhQMViUw4/n2U=
 		</data>
 		<key>Headers/Charts.h</key>
 		<data>
-		DHBY11g+it+3ECyHTiusb9M1HU0=
+		6GguYC8C7HpkWbt9lhTb0XEjJ0Y=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VDu4WTN5WH0g+HwktuhBmwEenYs=
+		LiodiV7EDKGeEuNaX0eBRnsi+8s=
 		</data>
 		<key>Modules/Charts.swiftmodule/arm.swiftdoc</key>
 		<data>
-		3bIAkKsdPwwqvg3sFv/phmnUBnU=
+		u7yMdp75jgD+KJUgkOmqL7ZH350=
 		</data>
 		<key>Modules/Charts.swiftmodule/arm.swiftmodule</key>
 		<data>
-		yEGshTqbxrrfkPzXMNcs0H0Cxds=
+		rZ2jnXr9PYiMCqoBfekZgfktARs=
 		</data>
 		<key>Modules/Charts.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		GCf0keFN/c1z0GRl1XLDWvfb4XY=
+		dNATOi9p5uPSHwi1awPSlC5ag40=
 		</data>
 		<key>Modules/Charts.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Y/0nPXn2kdAS888pN77StW/+N4E=
+		D7nhH1qE2VyeGFGnZDUagLIAfMg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		1aGO2s65/GT6tIXLOxXrgbQjxu8=
-		</data>
-		<key>embedded.mobileprovision</key>
-		<data>
-		JKbXoT98W7zj86Z2W3qbeHZe/kE=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/Charts-Swift.h</key>
-		<data>
-		cztSQ3bTRiWTFE69cSparwcx2rA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			3t15xIzWb38sfVIhQMViUw4/n2U=
+			</data>
+			<key>hash2</key>
+			<data>
+			c7+UrUOQtFIThtHrqlkp2jHqjZ4GLtKvmz4DCTikrz4=
+			</data>
+		</dict>
 		<key>Headers/Charts.h</key>
-		<data>
-		DHBY11g+it+3ECyHTiusb9M1HU0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			6GguYC8C7HpkWbt9lhTb0XEjJ0Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			rgs7n4CVsy5vApLkc07ETbe/fLKtNIFE3/a/dpx1iTY=
+			</data>
+		</dict>
 		<key>Modules/Charts.swiftmodule/arm.swiftdoc</key>
-		<data>
-		3bIAkKsdPwwqvg3sFv/phmnUBnU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			u7yMdp75jgD+KJUgkOmqL7ZH350=
+			</data>
+			<key>hash2</key>
+			<data>
+			ojRISZisdWNZap6zMUyyESq/z1HjWhHPoPclHCflXv0=
+			</data>
+		</dict>
 		<key>Modules/Charts.swiftmodule/arm.swiftmodule</key>
-		<data>
-		yEGshTqbxrrfkPzXMNcs0H0Cxds=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			rZ2jnXr9PYiMCqoBfekZgfktARs=
+			</data>
+			<key>hash2</key>
+			<data>
+			3RBNeYwgUqdiQpGwLhBrCkJ1FVAMaWDu252TYZpQzx8=
+			</data>
+		</dict>
 		<key>Modules/Charts.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		GCf0keFN/c1z0GRl1XLDWvfb4XY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			dNATOi9p5uPSHwi1awPSlC5ag40=
+			</data>
+			<key>hash2</key>
+			<data>
+			pGIjePiI0EgWCGg2/L4QO2ASz8QFvf9/rxtPYHAACDs=
+			</data>
+		</dict>
 		<key>Modules/Charts.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		Y/0nPXn2kdAS888pN77StW/+N4E=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			D7nhH1qE2VyeGFGnZDUagLIAfMg=
+			</data>
+			<key>hash2</key>
+			<data>
+			pFJWK+sDlxCeIInSXtuldcUKe72GQyQiRwectAwjAAk=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		1aGO2s65/GT6tIXLOxXrgbQjxu8=
-		</data>
-		<key>embedded.mobileprovision</key>
-		<data>
-		JKbXoT98W7zj86Z2W3qbeHZe/kE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			1aGO2s65/GT6tIXLOxXrgbQjxu8=
+			</data>
+			<key>hash2</key>
+			<data>
+			oXRlghIlxhyW938uWtJcViTGUGW0mL0C8lTZa1gQKt8=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

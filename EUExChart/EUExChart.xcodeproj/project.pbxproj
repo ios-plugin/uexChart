@@ -10,8 +10,7 @@
 		4260D6561B21F7A400A894EE /* EUExChartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260D6551B21F7A400A894EE /* EUExChartManager.m */; };
 		4260D65A1B22039200A894EE /* BarChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260D6591B22039200A894EE /* BarChartModel.m */; };
 		4260D6631B22048300A894EE /* LineChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260D6621B22048300A894EE /* LineChartModel.m */; };
-		42B70D701C44EC0600B340D5 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B70D6F1C44EC0600B340D5 /* Charts.framework */; };
-		42B70D731C44F14700B340D5 /* Charts.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 42B70D6F1C44EC0600B340D5 /* Charts.framework */; };
+		427BE1531D8657470087076B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427BE1521D8657470087076B /* Charts.framework */; };
 		C6099B671B16C5F000DC160A /* PieChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6099B661B16C5F000DC160A /* PieChartModel.m */; };
 		C64D82381B15CBDE00DF2105 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64D82371B15CBDE00DF2105 /* UIKit.framework */; };
 		C64D823A1B15CC1700DF2105 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64D82391B15CC1700DF2105 /* CoreGraphics.framework */; };
@@ -24,10 +23,9 @@
 		C6567ED61B15795D003AB65E /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = embedFrameworks;
+			dstPath = embed;
 			dstSubfolderSpec = 16;
 			files = (
-				42B70D731C44F14700B340D5 /* Charts.framework in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +39,7 @@
 		4260D6591B22039200A894EE /* BarChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChartModel.m; sourceTree = "<group>"; };
 		4260D6611B22048300A894EE /* LineChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartModel.h; sourceTree = "<group>"; };
 		4260D6621B22048300A894EE /* LineChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartModel.m; sourceTree = "<group>"; };
-		42B70D6F1C44EC0600B340D5 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Charts.framework; sourceTree = "<group>"; };
+		427BE1521D8657470087076B /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Charts.framework; sourceTree = "<group>"; };
 		C6099B651B16C5F000DC160A /* PieChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartModel.h; sourceTree = "<group>"; };
 		C6099B661B16C5F000DC160A /* PieChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartModel.m; sourceTree = "<group>"; };
 		C6099B681B16C67800DC160A /* EUExChartModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExChartModels.h; sourceTree = "<group>"; };
@@ -75,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B70D701C44EC0600B340D5 /* Charts.framework in Frameworks */,
+				427BE1531D8657470087076B /* Charts.framework in Frameworks */,
 				C64D823A1B15CC1700DF2105 /* CoreGraphics.framework in Frameworks */,
 				C64D82381B15CBDE00DF2105 /* UIKit.framework in Frameworks */,
 			);
@@ -154,7 +152,7 @@
 		C6567EF51B157BD5003AB65E /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
-				42B70D6F1C44EC0600B340D5 /* Charts.framework */,
+				427BE1521D8657470087076B /* Charts.framework */,
 				4260D6541B21F7A400A894EE /* EUExChartManager.h */,
 				4260D6551B21F7A400A894EE /* EUExChartManager.m */,
 				C6099B631B16A93900DC160A /* Models */,
@@ -205,7 +203,7 @@
 		C6567ED01B15795D003AB65E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = AppCan;
 				TargetAttributes = {
 					C6567ED71B15795D003AB65E = {

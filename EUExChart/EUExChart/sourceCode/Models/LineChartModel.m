@@ -370,8 +370,8 @@
     leftAxis.valueFormatter.negativeSuffix = symbol;
     leftAxis.valueFormatter.positiveSuffix = symbol;
     leftAxis.startAtZeroEnabled=NO;
-    if([self getValueByName:@"minValue"]) leftAxis.customAxisMin=[[self getValueByName:@"minValue"] floatValue];
-    if([self getValueByName:@"maxValue"]) leftAxis.customAxisMax =[[self getValueByName:@"maxValue"] floatValue];
+    if([self getValueByName:@"minValue"]) leftAxis.axisMinValue =[[self getValueByName:@"minValue"] floatValue];
+    if([self getValueByName:@"maxValue"]) leftAxis.axisMaxValue =[[self getValueByName:@"maxValue"] floatValue];
     leftAxis.gridColor=[self getValueByName:@"borderColor"];
     leftAxis.axisLineColor=[self getValueByName:@"borderColor"];
     

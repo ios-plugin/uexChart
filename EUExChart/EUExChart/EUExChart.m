@@ -77,7 +77,7 @@
 #pragma mark - Main Methods
 -(void)openPieChart:(NSMutableArray *)inArgument{
     if([inArgument count]<1) return;
-    id dataDict=[self getDataFromJson:inArgument[0]];
+    id dataDict = [inArgument[0] JSONValue];
     
     if(![dataDict isKindOfClass:[NSDictionary class]]){
         return;
@@ -92,13 +92,13 @@
 
 -(void)closePieChart:(NSMutableArray *)inArgument{
     if([inArgument count] <1){
-        NSArray *idArray=[_chartMgr.pieCharts allKeys];
-        for(int i=0;i<[idArray count];i++){
+        NSArray *idArray = [_chartMgr.pieCharts allKeys];
+        for(int i = 0;i<[idArray count];i++){
             [_chartMgr removeChartViewById:idArray[i] ChartType:uexChartTypePieChart];
         }
         return;
     }
-    id info = [self getDataFromJson:inArgument[0]];
+    id info = [inArgument[0] JSONValue];
     if([info isKindOfClass:[NSArray class]]){
         
         for(int i=0;i<[info count];i++){
@@ -111,7 +111,7 @@
 
 -(void)openLineChart:(NSMutableArray *)inArgument{
     if([inArgument count]<1) return;
-    id dataDict=[self getDataFromJson:inArgument[0]];
+    id dataDict = [inArgument[0] JSONValue];
     
     if(![dataDict isKindOfClass:[NSDictionary class]]){
         return;
@@ -132,7 +132,7 @@
         }
         return;
     }
-    id info = [self getDataFromJson:inArgument[0]];
+    id info = [inArgument[0] JSONValue];
     if([info isKindOfClass:[NSArray class]]){
         
         for(int i=0;i<[info count];i++){
@@ -144,7 +144,7 @@
 }
 -(void)openBarChart:(NSMutableArray *)inArgument{
     if([inArgument count]<1) return;
-    id dataDict=[self getDataFromJson:inArgument[0]];
+    id dataDict = [inArgument[0] JSONValue];
     
     if(![dataDict isKindOfClass:[NSDictionary class]]){
         return;
@@ -165,7 +165,7 @@
         }
         return;
     }
-    id info = [self getDataFromJson:inArgument[0]];
+    id info = [inArgument[0] JSONValue];
     if([info isKindOfClass:[NSArray class]]){
         
         for(int i=0;i<[info count];i++){
@@ -214,21 +214,23 @@
 
 #pragma mark - chartView Delegate
 
-
-
-
-- (void)chartValueSelected:(ChartViewBase * __nonnull)chartView entry:(ChartDataEntry * __nonnull)entry dataSetIndex:(NSInteger)dataSetIndex highlight:(ChartHighlight * __nonnull)highlight
-{
-    
-    NSMutableDictionary *dict =[NSMutableDictionary dictionary];
-    NSString *string = [NSString stringWithFormat:@"%ld",(long)chartView.tag];
-    [dict setValue:string forKey:@"id"];
-    [dict setValue:@(entry.value) forKey:@"value"];
-    [dict setValue:@(dataSetIndex) forKey:@"dataSetIndex"];
-    [dict setValue:@(entry.xIndex) forKey:@"xIndex"];
-    
-    [self returnJsonWithName:@"onValueSelected" Object:dict];
+- (void)chartValueSelected:(ChartViewBase * _Nonnull)chartView entry:(ChartDataEntry * _Nonnull)entry highlight:(ChartHighlight * _Nonnull)highlight{
+    NSLog(@"entry:%@",entry);
 }
+
+
+//- (void)chartValueSelected:(ChartViewBase * __nonnull)chartView entry:(ChartDataEntry * __nonnull)entry dataSetIndex:(NSInteger)dataSetIndex highlight:(ChartHighlight * __nonnull)highlight
+//{
+//    
+//    NSMutableDictionary *dict =[NSMutableDictionary dictionary];
+//    NSString *string = [NSString stringWithFormat:@"%ld",(long)chartView.tag];
+//    [dict setValue:string forKey:@"id"];
+//    [dict setValue:@(entry.value) forKey:@"value"];
+//    [dict setValue:@(dataSetIndex) forKey:@"dataSetIndex"];
+//    [dict setValue:@(entry.xIndex) forKey:@"xIndex"];
+//    
+//    [self returnJsonWithName:@"onValueSelected" Object:dict];
+//}
 
 - (void)chartValueNothingSelected:(ChartViewBase * __nonnull)chartView
 {
@@ -253,8 +255,19 @@
      
      NSString *result = [[NSString alloc] initWithData:jsonData  encoding:NSUTF8StringEncoding];
      */
-    NSString *result=[obj JSONFragment];
-    NSString *jsSuccessStr = [NSString stringWithFormat:@"if(uexChart.%@ != null){uexChart.%@('%@');}",name,name,result];
+    
+    id ret = @"undefined";
+    if ([obj isKindOfClass:[NSString class]]) {
+        ret = [obj JSONFragment];
+    }
+    if ([obj isKindOfClass:[NSDictionary class]] || [obj isKindOfClass:[NSArray class]]) {
+        ret = [obj JSONFragment].JSONFragment;
+    }
+    if ([obj isKindOfClass:[NSNumber class]]) {
+        ret = obj;
+    }
+
+    NSString *jsSuccessStr = [NSString stringWithFormat:@"if(uexChart.%@ != null){uexChart.%@(%@);}",name,name,ret];
     
     [self performSelectorOnMainThread:@selector(callBack:) withObject:jsSuccessStr waitUntilDone:YES];
     
@@ -269,32 +282,6 @@
 }
 
 
-
-//从json字符串中获取数据
-- (id)getDataFromJson:(NSString *)jsonData{
-    NSError *error = nil;
-    
-    
-    
-    NSData *jsonData2= [jsonData dataUsingEncoding:NSUTF8StringEncoding];
-    
-    id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData2
-                     
-                                                    options:NSJSONReadingMutableContainers
-                     
-                                                      error:&error];
-    
-    if (jsonObject != nil && error == nil){
-        
-        return jsonObject;
-    }else{
-        
-        // 解析錯誤
-        
-        return nil;
-    }
-    
-}
 
 
 @end
