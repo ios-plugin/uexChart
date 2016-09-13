@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4216D3F81D87EF0500C0D1B6 /* Charts.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 427BE1521D8657470087076B /* Charts.framework */; };
 		4260D6561B21F7A400A894EE /* EUExChartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260D6551B21F7A400A894EE /* EUExChartManager.m */; };
 		4260D65A1B22039200A894EE /* BarChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260D6591B22039200A894EE /* BarChartModel.m */; };
 		4260D6631B22048300A894EE /* LineChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260D6621B22048300A894EE /* LineChartModel.m */; };
@@ -26,6 +27,7 @@
 			dstPath = embed;
 			dstSubfolderSpec = 16;
 			files = (
+				4216D3F81D87EF0500C0D1B6 /* Charts.framework in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;

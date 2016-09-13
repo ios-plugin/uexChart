@@ -12,6 +12,8 @@
 bin/
 gen/
 
+
+.DS_Store
 # Gradle files
 .gradle/
 build/
