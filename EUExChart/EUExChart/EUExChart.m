@@ -54,11 +54,24 @@
 -(id)initWithBrwView:(EBrowserView *)eInBrwView{
     self=[super initWithBrwView:eInBrwView];
     if(self){
-        _chartDict=[NSMutableDictionary dictionary];
-        self.debugMode=YES;
-        self.chartMgr=[[EUExChartManager alloc] init];
+        //self.debugMode=YES;
     }
     return  self;
+}
+
+
+- (EUExChartManager *)chartMgr{
+    if (!_chartMgr) {
+        _chartMgr = [[EUExChartManager alloc]init];
+    }
+    return _chartMgr;
+}
+
+- (NSMutableDictionary *)chartDict{
+    if (!_chartDict) {
+        _chartDict = [NSMutableDictionary dictionary];
+    }
+    return _chartDict;
 }
 
 -(void)clean{
@@ -92,9 +105,9 @@
 
 -(void)closePieChart:(NSMutableArray *)inArgument{
     if([inArgument count] <1){
-        NSArray *idArray = [_chartMgr.pieCharts allKeys];
+        NSArray *idArray = [self.chartMgr .pieCharts allKeys];
         for(int i = 0;i<[idArray count];i++){
-            [_chartMgr removeChartViewById:idArray[i] ChartType:uexChartTypePieChart];
+            [self.chartMgr removeChartViewById:idArray[i] ChartType:uexChartTypePieChart];
         }
         return;
     }
@@ -102,7 +115,7 @@
     if([info isKindOfClass:[NSArray class]]){
         
         for(int i=0;i<[info count];i++){
-            [_chartMgr removeChartViewById:info[i] ChartType:uexChartTypePieChart];
+            [self.chartMgr removeChartViewById:info[i] ChartType:uexChartTypePieChart];
         }
         
     }
@@ -126,9 +139,9 @@
 
 -(void)closeLineChart:(NSMutableArray *)inArgument{
     if([inArgument count] <1){
-        NSArray *idArray=[_chartMgr.lineCharts allKeys];
+        NSArray *idArray=[self.chartMgr .lineCharts allKeys];
         for(int i=0;i<[idArray count];i++){
-            [_chartMgr removeChartViewById:idArray[i] ChartType:uexChartTypeLineChart];
+            [self.chartMgr removeChartViewById:idArray[i] ChartType:uexChartTypeLineChart];
         }
         return;
     }
@@ -136,7 +149,7 @@
     if([info isKindOfClass:[NSArray class]]){
         
         for(int i=0;i<[info count];i++){
-            [_chartMgr removeChartViewById:info[i] ChartType:uexChartTypeLineChart];
+            [self.chartMgr removeChartViewById:info[i] ChartType:uexChartTypeLineChart];
         }
         
     }
@@ -159,9 +172,9 @@
 
 -(void)closeBarChart:(NSMutableArray *)inArgument{
     if([inArgument count] <1){
-        NSArray *idArray=[_chartMgr.barCharts allKeys];
+        NSArray *idArray=[self.chartMgr .barCharts allKeys];
         for(int i=0;i<[idArray count];i++){
-            [_chartMgr removeChartViewById:idArray[i] ChartType:uexChartTypeBarChart];
+            [self.chartMgr removeChartViewById:idArray[i] ChartType:uexChartTypeBarChart];
         }
         return;
     }
@@ -169,7 +182,7 @@
     if([info isKindOfClass:[NSArray class]]){
         
         for(int i=0;i<[info count];i++){
-            [_chartMgr removeChartViewById:info[i] ChartType:uexChartTypeBarChart];
+            [self.chartMgr removeChartViewById:info[i] ChartType:uexChartTypeBarChart];
         }
         
     }
@@ -198,7 +211,7 @@
                chartType:(uexChartType) type
          isScrollWithWeb:(BOOL) isScroll
                 duration:(CGFloat)duration{
-    if([_chartMgr addChartView:chartView ChartType:type id:identifier]){
+    if([self.chartMgr addChartView:chartView ChartType:type id:identifier]){
         if(isScroll){
             
             [EUtility brwView:meBrwView addSubviewToScrollView:chartView];
