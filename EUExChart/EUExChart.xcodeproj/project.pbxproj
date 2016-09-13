@@ -188,6 +188,7 @@
 			buildPhases = (
 				C6567ED41B15795D003AB65E /* Sources */,
 				C6567ED51B15795D003AB65E /* Frameworks */,
+				4216D3F91D87F19500C0D1B6 /* ShellScript */,
 				C6567ED61B15795D003AB65E /* Copy Files */,
 			);
 			buildRules = (
@@ -229,6 +230,22 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4216D3F91D87F19500C0D1B6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf \"$SRCROOT/$PRODUCT_NAME/embed\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6567ED41B15795D003AB65E /* Sources */ = {
