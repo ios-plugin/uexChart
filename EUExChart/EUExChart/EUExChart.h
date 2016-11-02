@@ -2,13 +2,18 @@
 //  EUExChart.h
 //  EUExChart
 //
-//  Created by CC on 15/5/27.
-//  Copyright (c) 2015年 AppCan. All rights reserved.
+//  Created by CeriNo on 2016/10/27.
+//  Copyright © 2016年 AppCan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "EUExBase.h"
 
-@interface EUExChart : EUExBase
+//! Project version number for EUExChart.
+FOUNDATION_EXPORT double EUExChartVersionNumber;
 
-@end
+//! Project version string for EUExChart.
+FOUNDATION_EXPORT const unsigned char EUExChartVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <EUExChart/PublicHeader.h>
+
+

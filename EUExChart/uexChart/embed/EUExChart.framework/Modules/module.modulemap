@@ -1,0 +1,10 @@
+framework module EUExChart {
+  umbrella header "EUExChart.h"
+
+  export *
+  module * { export * }
+}
+
+module EUExChart.Swift {
+    header "EUExChart-Swift.h"
+}

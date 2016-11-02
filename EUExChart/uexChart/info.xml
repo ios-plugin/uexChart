@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
     <plugin
-        uexName="uexChart" version="3.0.7" build="7">
-        <info>7:更新SDK至2.2.5,用Swift2.3编译</info>
-        <build>6:修改了每次只能获取最后一个图表id的BUG</build>
-        <build>5:在监听方法onValueSelected中增加了图表id字段，用来区分图表</build>
-        <build>4:改用embedFrameworks方式调用,提高编译速度</build>
-        <build>3:barChart和lineChart新增option参数</build>
-        <build>2:使用Swift2.1编译，支持IDE</build>
-        <build>1:使用Swift2.0的库，支持Xcode7</build>
-        <build>0:几何图表(uexChart)插件 for iOS</build>
+        uexName="uexChart" swiftABI="3.0.1" version="4.0.0" build="0">
+        <info>0 :几何图表(uexChart)插件 for iOS</info>
     </plugin>
 </uexplugins>

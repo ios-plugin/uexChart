@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C6567ED71B15795D003AB65E"
-               BuildableName = "libuexChart.a"
+               BlueprintIdentifier = "4219BE701DC1AE09002E5C4E"
+               BuildableName = "EUExChart.framework"
                BlueprintName = "EUExChart"
                ReferencedContainer = "container:EUExChart.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6567ED71B15795D003AB65E"
-            BuildableName = "libuexChart.a"
+            BlueprintIdentifier = "4219BE701DC1AE09002E5C4E"
+            BuildableName = "EUExChart.framework"
             BlueprintName = "EUExChart"
             ReferencedContainer = "container:EUExChart.xcodeproj">
          </BuildableReference>
@@ -63,8 +63,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6567ED71B15795D003AB65E"
-            BuildableName = "libuexChart.a"
+            BlueprintIdentifier = "4219BE701DC1AE09002E5C4E"
+            BuildableName = "EUExChart.framework"
             BlueprintName = "EUExChart"
             ReferencedContainer = "container:EUExChart.xcodeproj">
          </BuildableReference>
