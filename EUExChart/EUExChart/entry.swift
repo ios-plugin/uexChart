@@ -53,7 +53,7 @@ import JavaScriptCore
             }
             
         }
-        print("\(chart.id)\n\(chart.isScrollWithWeb)\n\(chart.duration)")
+
         if chart.isScrollWithWeb{
             self.webViewEngine?.webScrollView?.addSubview(chart.chartView)
         }else{
