@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4219BE701DC1AE09002E5C4E"
-               BuildableName = "EUExChart.framework"
-               BlueprintName = "EUExChart"
+               BuildableName = "uexChart.framework"
+               BlueprintName = "uexChart"
                ReferencedContainer = "container:EUExChart.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4219BE701DC1AE09002E5C4E"
-            BuildableName = "EUExChart.framework"
-            BlueprintName = "EUExChart"
+            BuildableName = "uexChart.framework"
+            BlueprintName = "uexChart"
             ReferencedContainer = "container:EUExChart.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4219BE701DC1AE09002E5C4E"
-            BuildableName = "EUExChart.framework"
-            BlueprintName = "EUExChart"
+            BuildableName = "uexChart.framework"
+            BlueprintName = "uexChart"
             ReferencedContainer = "container:EUExChart.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

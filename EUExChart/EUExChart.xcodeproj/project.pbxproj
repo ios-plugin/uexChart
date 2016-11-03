@@ -12,7 +12,7 @@
 		4219BE871DC1C6D8002E5C4E /* plugin.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4219BE7F1DC1AE41002E5C4E /* plugin.xml */; };
 		4219BE881DC1C6D8002E5C4E /* uexChart.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4219BE801DC1AE41002E5C4E /* uexChart.plist */; };
 		4219BE8B1DC1CEAC002E5C4E /* entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BE8A1DC1CEAC002E5C4E /* entry.swift */; };
-		4219BE951DC1D0A0002E5C4E /* EUExChart.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4219BE711DC1AE09002E5C4E /* EUExChart.framework */; };
+		4219BE951DC1D0A0002E5C4E /* uexChart.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4219BE711DC1AE09002E5C4E /* uexChart.framework */; };
 		4219BE9D1DC1D60D002E5C4E /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BE9C1DC1D60D002E5C4E /* PieChart.swift */; };
 		4219BEA81DC202CD002E5C4E /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4219BEA71DC202CD002E5C4E /* Charts.framework */; };
 		4219BEAB1DC6EE43002E5C4E /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BEAA1DC6EE43002E5C4E /* Chart.swift */; };
@@ -43,14 +43,14 @@
 			dstSubfolderSpec = 0;
 			files = (
 				42FAC5761DC9E6C50072DFCF /* Charts.framework in CopyFiles */,
-				4219BE951DC1D0A0002E5C4E /* EUExChart.framework in CopyFiles */,
+				4219BE951DC1D0A0002E5C4E /* uexChart.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4219BE711DC1AE09002E5C4E /* EUExChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EUExChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4219BE711DC1AE09002E5C4E /* uexChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = uexChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4219BE741DC1AE09002E5C4E /* EUExChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUExChart.h; sourceTree = "<group>"; };
 		4219BE751DC1AE09002E5C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4219BE7E1DC1AE41002E5C4E /* info.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = info.xml; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		4219BE721DC1AE09002E5C4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4219BE711DC1AE09002E5C4E /* EUExChart.framework */,
+				4219BE711DC1AE09002E5C4E /* uexChart.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4219BE701DC1AE09002E5C4E /* EUExChart */ = {
+		4219BE701DC1AE09002E5C4E /* uexChart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4219BE791DC1AE09002E5C4E /* Build configuration list for PBXNativeTarget "EUExChart" */;
+			buildConfigurationList = 4219BE791DC1AE09002E5C4E /* Build configuration list for PBXNativeTarget "uexChart" */;
 			buildPhases = (
 				4219BE6C1DC1AE09002E5C4E /* Sources */,
 				4219BE6D1DC1AE09002E5C4E /* Frameworks */,
@@ -162,9 +162,9 @@
 			);
 			dependencies = (
 			);
-			name = EUExChart;
+			name = uexChart;
 			productName = EUExChart;
-			productReference = 4219BE711DC1AE09002E5C4E /* EUExChart.framework */;
+			productReference = 4219BE711DC1AE09002E5C4E /* uexChart.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +196,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4219BE701DC1AE09002E5C4E /* EUExChart */,
+				4219BE701DC1AE09002E5C4E /* uexChart */,
 			);
 		};
 /* End PBXProject section */
@@ -391,7 +391,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4219BE791DC1AE09002E5C4E /* Build configuration list for PBXNativeTarget "EUExChart" */ = {
+		4219BE791DC1AE09002E5C4E /* Build configuration list for PBXNativeTarget "uexChart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4219BE7A1DC1AE09002E5C4E /* Debug */,
