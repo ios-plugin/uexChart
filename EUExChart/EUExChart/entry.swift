@@ -30,7 +30,7 @@ import JavaScriptCore
     
     
     
-    func openChart<T: Chart>(type: T.Type,jsConfig: JSArgumment){
+    func openChart<T: Chart>(type: T.Type,jsConfig: JSArgument){
         guard let chart = T.init(jsConfig: jsConfig) else {
             ACLogError("uexChart~> Invalid Chart Data")
             return
@@ -63,7 +63,7 @@ import JavaScriptCore
         charts[chart.id] = chart
     }
     
-    func removeChart<T: Chart>(type: T.Type ,ids: JSArgumment){
+    func removeChart<T: Chart>(type: T.Type ,ids: JSArgument){
         let chartIds: [String] = ~ids ?? Array(charts.keys)
         for id in chartIds{
             if let chart = self.charts[id],chart is T{
@@ -75,24 +75,24 @@ import JavaScriptCore
     
     
     @objc func openPieChart(_ args: JSValue){
-        openChart(type: PieChart.self , jsConfig: JSArgumment(args)[0])
+        openChart(type: PieChart.self , jsConfig: JSArgument(args)[0])
     }
     
     @objc func closePieChart(_ args: JSValue){
-        removeChart(type: PieChart.self, ids:  JSArgumment(args)[0])
+        removeChart(type: PieChart.self, ids:  JSArgument(args)[0])
     }
     @objc func openLineChart(_ args: JSValue){
-        openChart(type: LineChart.self, jsConfig: JSArgumment(args)[0])
+        openChart(type: LineChart.self, jsConfig: JSArgument(args)[0])
     }
     @objc func closeLineChart(_ args: JSValue){
-        removeChart(type: LineChart.self, ids:  JSArgumment(args)[0])
+        removeChart(type: LineChart.self, ids:  JSArgument(args)[0])
     }
 
     @objc func openBarChart(_ args: JSValue){
-        openChart(type: BarChart.self, jsConfig: JSArgumment(args)[0])
+        openChart(type: BarChart.self, jsConfig: JSArgument(args)[0])
     }
     @objc func closeBarChart(_ args: JSValue){
-        removeChart(type: BarChart.self, ids:  JSArgumment(args)[0])
+        removeChart(type: BarChart.self, ids:  JSArgument(args)[0])
     }
     
 

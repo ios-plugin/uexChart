@@ -14,12 +14,12 @@ import Charts
 
 
 class BarChart{
-    struct Entity: JSArgummentConvertible {
+    struct Entity: JSArgumentConvertible {
         var barName: String!
         var barColor: UIColor!
         var data: [BarLineDataEntryGenerator.Unit] = []
         
-        static func jsa_fromJSArgument(_ argument: JSArgumment) -> Entity? {
+        static func jsa_fromJSArgument(_ argument: JSArgument) -> Entity? {
             var entity = Entity()
             guard
                 entity.barName <~ argument["barName"],
@@ -41,7 +41,7 @@ class BarChart{
     var duration: TimeInterval!
     var formatData: FormatData!
     
-    required init?(jsConfig: JSArgumment){
+    required init?(jsConfig: JSArgument){
         guard self.initialize(jsConfig: jsConfig) else{
             return nil
         }
@@ -70,7 +70,7 @@ extension BarChart: BarLineChart{
 
 
 extension BarChart{
-    func configureChartData(jsConfig: JSArgumment) {
+    func configureChartData(jsConfig: JSArgument) {
         var dataSets = [BarChartDataSet]()
         let entryGenerator = BarLineDataEntryGenerator(jsConfig: jsConfig)
         guard let entities: [Entity] = ~jsConfig["bars"] ,entities.count > 0 else{

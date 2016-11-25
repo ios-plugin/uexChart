@@ -12,11 +12,11 @@ import AppCanKitSwift
 import Charts
 
 class PieChart{
-    struct Entity: JSArgummentConvertible{
+    struct Entity: JSArgumentConvertible{
         var title: String!
         var color: UIColor!
         var value: Double!
-        static func jsa_fromJSArgument(_ argument: JSArgumment) -> Entity? {
+        static func jsa_fromJSArgument(_ argument: JSArgument) -> Entity? {
             var entity = Entity()
             guard
                 entity.color <~ argument["color"],
@@ -39,7 +39,7 @@ class PieChart{
     var formatData: FormatData!
 
     
-    required init?(jsConfig: JSArgumment){
+    required init?(jsConfig: JSArgument){
         guard self.initialize(jsConfig: jsConfig) else{
             return nil
         }
@@ -75,7 +75,7 @@ extension PieChart: Chart{
 
 
 extension PieChart{
-    func configureHole(jsConfig: JSArgumment){
+    func configureHole(jsConfig: JSArgument){
         view.drawHoleEnabled = ~jsConfig["showCenter"] ?? true
         view.holeColor <~ jsConfig["centerColor"]
         let centerRadius: CGFloat = ~jsConfig["centerRadius"] ?? 40
@@ -84,7 +84,7 @@ extension PieChart{
         view.transparentCircleRadiusPercent = centerTransRadius / 100
         
     }
-    func configureCenterString(jsConfig: JSArgumment){
+    func configureCenterString(jsConfig: JSArgument){
         let centerTitle = ~jsConfig["centerTitle"] ?? ""
         let centerSummary = ~jsConfig["centerSummary"] ?? ""
         let str = NSMutableAttributedString(string: "\(centerTitle)\n\(centerSummary)")
@@ -97,7 +97,7 @@ extension PieChart{
         view.centerAttributedText = str
         view.drawCenterTextEnabled <~ jsConfig["showTitle"]
     }
-    func configureChartData(jsConfig: JSArgumment){
+    func configureChartData(jsConfig: JSArgument){
         
         guard let entities: [Entity] = ~jsConfig["data"] ,entities.count > 0 else{
             return

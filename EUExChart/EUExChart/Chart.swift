@@ -26,7 +26,7 @@ struct FormatData{
     var descTextSize: CGFloat = 12
     var descTextColor: UIColor = UIColor.black
     
-    init(jsConfig: JSArgumment) {
+    init(jsConfig: JSArgument) {
         showUnit <~ jsConfig["showUnit"]
         unit <~ jsConfig["unit"]
         showValue <~ jsConfig["showValue"]
@@ -55,7 +55,7 @@ extension FormatData{
 enum LegendPosition: String{
     case bottom
     case right
-    init(jsConfig: JSArgumment){
+    init(jsConfig: JSArgument){
         if let positionStr: String = ~jsConfig["legendPosition"],let position = LegendPosition(rawValue: positionStr.lowercased()){
             self = position
         }else{
@@ -78,7 +78,7 @@ protocol Chart: class{
     var isScrollWithWeb: Bool {get set}
     var duration: TimeInterval! {get set}
     var formatData: FormatData! {get set}
-    init?(jsConfig: JSArgumment)
+    init?(jsConfig: JSArgument)
 
 }
 
@@ -95,7 +95,7 @@ extension Chart{
 
 
 extension Chart{
-    func initialize(jsConfig: JSArgumment) -> Bool {
+    func initialize(jsConfig: JSArgument) -> Bool {
         guard  id <~ jsConfig["id"] else {
             return false
         }
@@ -108,7 +108,7 @@ extension Chart{
 
     
     
-    func configureFrame(jsConfig: JSArgumment){
+    func configureFrame(jsConfig: JSArgument){
         var frame = UIScreen.main.bounds    //默认全屏
         frame.origin.x      <~ jsConfig["left"]
         frame.origin.y      <~ jsConfig["top"]
@@ -117,13 +117,13 @@ extension Chart{
         chartView.frame = frame
     }
     
-    func configureBackgroundColor(jsConfig: JSArgumment){
+    func configureBackgroundColor(jsConfig: JSArgument){
         var bgColor = UIColor.clear
         bgColor <~ jsConfig["bgColor"]
         chartView.backgroundColor = bgColor
     }
     
-    func configureLegend(jsConfig: JSArgumment) {
+    func configureLegend(jsConfig: JSArgument) {
         chartView.legend.enabled = ~jsConfig["showLegend"] ?? false
         let position = LegendPosition(jsConfig: jsConfig)
         switch position {
@@ -137,7 +137,7 @@ extension Chart{
         chartView.legend.font = formatData.descFont
     }
     
-    func configureDescription(jsConfig: JSArgumment){
+    func configureDescription(jsConfig: JSArgument){
         let desc = Charts.Description()
         desc.text <~ jsConfig["desc"]
         desc.font = formatData.descFont
@@ -149,7 +149,7 @@ extension Chart{
 }
 
 
-struct ExtraLineData: JSArgummentConvertible{
+struct ExtraLineData: JSArgumentConvertible{
     var limit: Double!
     var label: String!
     var lineColor: UIColor?
@@ -158,7 +158,7 @@ struct ExtraLineData: JSArgummentConvertible{
     var fontSize: CGFloat?
     var isSolid = true
     
-    static func jsa_fromJSArgument(_ argument: JSArgumment) -> ExtraLineData? {
+    static func jsa_fromJSArgument(_ argument: JSArgument) -> ExtraLineData? {
         var data = ExtraLineData()
         guard
             data.limit <~ argument["yValue"],
@@ -204,7 +204,7 @@ struct BarLineChartOptions{
     var isSupportZoomX = true
     var isSupportZoomY = true
     
-    init(jsConfig: JSArgumment){
+    init(jsConfig: JSArgument){
         initZoomX <~ jsConfig["initZoomX"]
         initZoomY <~ jsConfig["initZoomY"]
         initPositionX <~ jsConfig["initPositionX"]
@@ -218,10 +218,10 @@ struct BarLineChartOptions{
 }
 
 class BarLineDataEntryGenerator{
-    struct Unit : JSArgummentConvertible{
+    struct Unit : JSArgumentConvertible{
         var xValue: String!
         var yValue: Double!
-        static func jsa_fromJSArgument(_ argument: JSArgumment) -> Unit? {
+        static func jsa_fromJSArgument(_ argument: JSArgument) -> Unit? {
             var unit = Unit()
             if unit.xValue <~ argument["xValue"],unit.yValue <~ argument["yValue"] {
                 return unit
@@ -253,7 +253,7 @@ class BarLineDataEntryGenerator{
     let userCustomized: Bool
     var xValues = [String]()
     
-    init(jsConfig: JSArgumment){
+    init(jsConfig: JSArgument){
         userCustomized = xValues <~ jsConfig["xData"]
     }
     func generate(fromUnits units: [Unit]) -> [Entry]{
@@ -293,14 +293,14 @@ extension BarLineChart{
         }
     }
     
-    func configureBackgroundColor(jsConfig: JSArgumment){
+    func configureBackgroundColor(jsConfig: JSArgument){
         var bgColor = UIColor.clear
         bgColor <~ jsConfig["bgColor"]
         barLineChartView.backgroundColor = bgColor
         barLineChartView.gridBackgroundColor = bgColor
     }
     
-    func configureBorder(jsConfig: JSArgumment) {
+    func configureBorder(jsConfig: JSArgument) {
         var borderColor = UIColor.black
         borderColor <~ jsConfig["borderColor"]
         barLineChartView.drawBordersEnabled = true
@@ -343,7 +343,7 @@ extension BarLineChart{
         
     }
     
-    func configureOptions(jsConfig: JSArgumment){
+    func configureOptions(jsConfig: JSArgument){
         let option = BarLineChartOptions(jsConfig: jsConfig["option"])
         barLineChartView.dragEnabled = option.isSupportDrag
         barLineChartView.scaleXEnabled = option.isSupportZoomX
@@ -360,7 +360,7 @@ extension BarLineChart{
 
 infix operator <~
 @discardableResult
-func <~ (_ left: inout UIColor,_ right: JSArgumment) -> Bool{
+func <~ (_ left: inout UIColor,_ right: JSArgument) -> Bool{
     if
         let colorString: String = ~right,
         let color = UIColor.ac_Color(withHTMLColorString: colorString){
@@ -370,7 +370,7 @@ func <~ (_ left: inout UIColor,_ right: JSArgumment) -> Bool{
     return false
 }
 @discardableResult
-func <~ (_ left: inout UIColor!,_ right: JSArgumment) -> Bool{
+func <~ (_ left: inout UIColor!,_ right: JSArgument) -> Bool{
     if
         let colorString: String = ~right,
         let color = UIColor.ac_Color(withHTMLColorString: colorString){
@@ -380,7 +380,7 @@ func <~ (_ left: inout UIColor!,_ right: JSArgumment) -> Bool{
     return false
 }
 
-func <~ (_ left: inout UIColor?,_ right: JSArgumment){
+func <~ (_ left: inout UIColor?,_ right: JSArgument){
     if
         let colorString: String = ~right,
         let color = UIColor.ac_Color(withHTMLColorString: colorString){

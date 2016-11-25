@@ -13,7 +13,7 @@ import Charts
 
 
 class LineChart{
-    struct Entity: JSArgummentConvertible {
+    struct Entity: JSArgumentConvertible {
         var lineName: String!
         var lineColor: UIColor!
         var lineWidth: CGFloat!
@@ -23,7 +23,7 @@ class LineChart{
         var cubicIntensity: CGFloat = 0
         var data: [BarLineDataEntryGenerator.Unit] = []
 
-        static func jsa_fromJSArgument(_ argument: JSArgumment) -> Entity? {
+        static func jsa_fromJSArgument(_ argument: JSArgument) -> Entity? {
             var entity = Entity()
             guard
                 entity.lineName <~ argument["lineName"],
@@ -49,7 +49,7 @@ class LineChart{
     var duration: TimeInterval!
     var formatData: FormatData!
     
-    required init?(jsConfig: JSArgumment){
+    required init?(jsConfig: JSArgument){
         guard self.initialize(jsConfig: jsConfig) else{
             return nil
         }
@@ -80,7 +80,7 @@ extension LineChart: BarLineChart{
 
 
 extension LineChart{
-    func configureChartData(jsConfig: JSArgumment) {
+    func configureChartData(jsConfig: JSArgument) {
         var dataSets = [LineChartDataSet]()
         let entryGenerator = BarLineDataEntryGenerator(jsConfig: jsConfig)
         guard let entities: [Entity] = ~jsConfig["lines"], entities.count > 0 else{
