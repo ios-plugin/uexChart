@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
     <plugin
-        uexName="uexChart" swiftABI="3.0.1" version="4.0.1" build="1">
-        <info>1: 更新依赖的引擎库</info>
+        uexName="uexChart" swiftABI="3.0.1" version="4.1.0" build="2">
+        <info>2: 支持4.1引擎</info>
+        <build>1: 更新依赖的引擎库</build>
         <build>0: 几何图表(uexChart)插件 for iOS</build>
     </plugin>
 </uexplugins>

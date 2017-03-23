@@ -16,6 +16,7 @@
 		4219BE9D1DC1D60D002E5C4E /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BE9C1DC1D60D002E5C4E /* PieChart.swift */; };
 		4219BEA81DC202CD002E5C4E /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4219BEA71DC202CD002E5C4E /* Charts.framework */; };
 		4219BEAB1DC6EE43002E5C4E /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4219BEAA1DC6EE43002E5C4E /* Chart.swift */; };
+		422D820F1E4C4D4F00399EEA /* AppCanKitSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42FAC57B1DC9EF240072DFCF /* AppCanKitSwift.framework */; };
 		42A854A21DC898B3007ADD9F /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A854A11DC898B2007ADD9F /* LineChart.swift */; };
 		42A854A61DC9BAE7007ADD9F /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A854A51DC9BAE7007ADD9F /* BarChart.swift */; };
 		42FAC5761DC9E6C50072DFCF /* Charts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4219BEA71DC202CD002E5C4E /* Charts.framework */; };
@@ -42,6 +43,7 @@
 			dstPath = $SRCROOT/uexChart/embed;
 			dstSubfolderSpec = 0;
 			files = (
+				422D820F1E4C4D4F00399EEA /* AppCanKitSwift.framework in CopyFiles */,
 				42FAC5761DC9E6C50072DFCF /* Charts.framework in CopyFiles */,
 				4219BE951DC1D0A0002E5C4E /* uexChart.framework in CopyFiles */,
 			);

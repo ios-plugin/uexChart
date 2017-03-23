@@ -1,2 +1,2 @@
 github "danielgindi/Charts" == 3.0.0
-github "https://github.com/AppCanOpenSource/appcan-ios" "master"
+github "ios-plugin/AppCanKit" "master"
